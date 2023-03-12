@@ -38,9 +38,10 @@ void loop() {
 }
 ```
 
-##Diagrama de flujo
+## Diagrama de flujo
 
 <div class="mermaid">
+
 flowchart TD;
     A[Asignación output led al pin 23 y asignación valor A/D de entrada al pin 15] -->B[Inicializar];    
     B-->G[Imprimir por pantalla valor de voltaje y temperatura];
@@ -52,9 +53,9 @@ flowchart TD;
     F-->B;
 </div>
 
-##Diagrama de tiempos
+## Diagrama de tiempos
 
-```wavedrom
+``` wavedrom
 { signal : [
     { name: "led", wave: "0101010101" },
   { name: "estado",  wave: "9797979797",   data: "OFF ON OFF ON OFF ON OFF ON OFF ON" },
