@@ -42,8 +42,7 @@ void loop() {
 ```mermaid
 
 flowchart TD;
-    A[Asignación output led al pin 23 y asignación valor A/D de entrada al pin 15] -->B[Inicializar];    
-    B-->G[Imprimir por pantalla valor de voltaje y temperatura];
+    B[Inicializar]-->G[Imprimir por pantalla valor de voltaje y temperatura];
     G-->C[led ON];
     C-->D[delay 500ms];
     D-->H[Imprimir por pantalla valor de voltaje y temperatura];
@@ -61,4 +60,3 @@ flowchart TD;
     { name: "led", wave: "0101010101" },
   { name: "estado",  wave: "9797979797",   data: "OFF ON OFF ON OFF ON OFF ON OFF ON" },
 ]}
-```
